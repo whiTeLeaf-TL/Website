@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    /* font-family: "Work Sans", sans-serif; */
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #f5f5f7;
+    --main-color: #0ef -;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+
+    background:
+        url("backgroud.png") center center no-repeat;
+    background-size: cover;
+}
+
+.nav-f {
+    position: fixed;
+    width: 100%;
+    padding: 9px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.67);
+    /* 渐渐显示颜色 */
+    transition: all 0.5s ease;
+}
+
+.home {
+    min-height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    /* left: 256px; */
+    /* top: 80px; */
+    border-radius: 8px;
+    background: rgba(13, 13, 13, 0.16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 150px 80px 150px;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-last-of-type(1) {
+    margin-bottom: 2rem;
+}
+
+.main-content {
+    font-family: Misans;
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-bottom: 20px;
+}
+
+.main-content h1 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    letter-spacing: 0px;
+    line-height: 56px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.home-content .line1 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.home-content .line2 {
+    text-decoration-line: none;
+    background-image: linear-gradient(115.98deg,
+            rgba(65, 209, 255, 1) 0%,
+            rgba(189, 52, 254, 1) 100%);
+    text-shadow: 0px 0px 41.53px rgba(20, 153, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.home-content p {
+    font-family: HarmonyOS Sans SC;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.main-button {
+    position: relative;
+    z-index: 3;
+    width: auto;
+    height: auto;
+    mix-blend-mode: normal;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 0px 0px 0px;
+    box-sizing: border-box;
+    gap: 16px;
+    order: 2;
+    min-height: auto;
+}
+
+.bt1 {
+
+
+    position: relative;
+    z-index: 1;
+    width: 108px;
+    height: 41px;
+    box-shadow: 0px 2px 20px 5px rgba(42, 130, 228, 1);
+    border-radius: 20px;
+    mix-blend-mode: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(42, 130, 228, 1);
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-family: Misans, bold;
+}
+
+.bt2 {
+    position: relative;
+    z-index: 2;
+    width: 108px;
+    height: 41px;
+    border-radius: 20px;
+    mix-blend-mode: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(29, 33, 41, 1);
+    font-size: 15px;
+    font-family: Misans, bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.title h1 {
+    color: #f5f5f7;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px;
+    font-size: 48px;
+}
+
+.logo {
+    color: #f5f5f7;
+    font-size: 2em;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #f5f5f7;
+    font-weight: 500;
+    margin: 40px;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: #f5f5f7;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #f5f5f7;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #f5f5f7;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #f5f5f7;
+    color: #d4b45c;
+}
