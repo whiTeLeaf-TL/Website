@@ -38,7 +38,11 @@ const App = () => {
                         </div>
                     </section>
                 </header>
-                <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2024079575号-1</a>
+
+                {/* 添加备案号 */}
+                <footer className="footer">
+                    <p>冀ICP备2024079575号-1</p>
+                </footer>
             </body>
         </div>
     );

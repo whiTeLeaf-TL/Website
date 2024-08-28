@@ -224,3 +224,23 @@ header {
     background: #f5f5f7;
     color: #d4b45c;
 }
+
+.footer {
+    background-color: #000;
+    /* 黑色背景 */
+    color: #fff;
+    /* 白色文字 */
+    text-align: center;
+    /* 文本居中 */
+    padding: 10px 0;
+    /* 上下内边距 */
+    font-size: 14px;
+    /* 字体大小 */
+    position: fixed;
+    /* 固定在页面底部 */
+    bottom: 0;
+    width: 100%;
+    /* 占满整个宽度 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    /* 添加阴影效果 */
+}
