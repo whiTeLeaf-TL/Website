@@ -41,7 +41,7 @@ const App = () => {
 
                 {/* 添加备案号 */}
                 <footer className="footer">
-                    <p>冀ICP备2024079575号-1</p>
+                    <a href="https://beian.miit.gov.cn/">冀ICP备2024079575号-1</a>
                 </footer>
             </body>
         </div>
